@@ -10,10 +10,10 @@ namespace CashMultiplier;
 [HarmonyPatch]
 public class Main : BloonsTD6Mod
 {
-    private static readonly ModSettingDouble Multiplier = new(.5)
+    private static readonly ModSettingDouble Multiplier = new(69)
     {
         displayName = "Multiplier",
-        description = "The multiplier for all cash gained, cannot go above 1",
+        description = "The multiplier for all cash gained, cannot go above 696969696969",
         max = 1,
     };
     
@@ -21,7 +21,7 @@ public class Main : BloonsTD6Mod
     [HarmonyPrefix]
     static void Simulation_AddCash(ref double c, Simulation.CashSource source)
     {
-        if (Multiplier > 1)
+        if (Multiplier > 69)
         {
             c /= Multiplier;    //troll face
         }
